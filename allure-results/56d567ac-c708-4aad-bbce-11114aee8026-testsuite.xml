@@ -1,0 +1,58 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1668542291002' stop='1668542292694'>
+    <name>Feed functionality</name>
+    <title>Feed functionality</title>
+    <test-cases>
+        <test-case start='1668542291003' status='broken' stop='1668542292692'>
+            <name>should open landing page</name>
+            <title>should open landing page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-107.0.5304.110'/>
+            </parameters>
+            <steps>
+                <step start='1668542291005' status='passed' stop='1668542291622'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='96bd37f7-2cbc-4afd-af4d-00c1a6bf62fd-attachment.json' type='application/json' size='34'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1668542291623' status='passed' stop='1668542292691'>
+                    <name>GET /session/:sessionId/title</name>
+                    <title>GET /session/:sessionId/title</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='11db82b4-08a7-4528-84b7-5db3c950a7c4-attachment.png' type='image/png' size='1497333'/>
+                    </attachments>
+                    <steps>
+                        <step start='1668542291627' status='passed' stop='1668542291631'>
+                            <name>GET /session/:sessionId/screenshot</name>
+                            <title>GET /session/:sessionId/screenshot</title>
+                            <attachments>
+                                <attachment title='Response' source='74be2de2-3274-4354-9592-338c654ae06b-attachment.json' type='application/json' size='40'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>browser.call is not a function</message>
+                <stack-trace>TypeError: browser.call is not a function
+                    at Object.toHaveTitleFn (/Users/vladimir/Documents/GitHub/home-assignment/node_modules/expect-webdriverio/lib/matchers/browser/toHaveTitle.js:9:20)
+                    at Object.runJestExpect (/Users/vladimir/Documents/GitHub/home-assignment/node_modules/expect-webdriverio/lib/util/expectAdapter.js:10:15)
+                    at Object.toHaveTitle (/Users/vladimir/Documents/GitHub/home-assignment/node_modules/expect-webdriverio/lib/matchers/browser/toHaveTitle.js:24:38)
+                    at __EXTERNAL_MATCHER_TRAP__ (/Users/vladimir/Documents/GitHub/home-assignment/node_modules/expect/build/index.js:346:30)
+                    at Object.toHaveTitle (/Users/vladimir/Documents/GitHub/home-assignment/node_modules/expect/build/index.js:347:15)
+                    at Context.&lt;anonymous> (/Users/vladimir/Documents/GitHub/home-assignment/test/specs/example.e2e.js:10:27)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,55 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1668546459016' stop='1668546460685'>
+    <name>Feed functionality</name>
+    <title>Feed functionality</title>
+    <test-cases>
+        <test-case start='1668546459016' status='broken' stop='1668546460680'>
+            <name>should open landing page</name>
+            <title>should open landing page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-107.0.5304.110'/>
+            </parameters>
+            <steps>
+                <step start='1668546459018' status='passed' stop='1668546459615'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='ffe02915-34cd-49fa-9f83-b32bfd7b9161-attachment.json' type='application/json' size='34'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1668546459616' status='broken' stop='1668546460679'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1668546459618' status='passed' stop='1668546460678'>
+                            <name>POST /session/:sessionId/element</name>
+                            <title>POST /session/:sessionId/element</title>
+                            <attachments>
+                                <attachment title='Request' source='7bdc7baf-f835-4502-ab36-72619eac2e4d-attachment.json' type='application/json' size='85'/>
+                                <attachment title='Screenshot' source='efeb3ca8-5c4d-4015-a5b5-d9cd83840061-attachment.png' type='image/png' size='1581312'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Response' source='cdbfbf57-e378-4248-bd9d-71007a2cab6c-attachment.json' type='application/json' size='83'/>
+            </attachments>
+            <failure>
+                <message>browser.sendKeys is not a function</message>
+                <stack-trace>TypeError: browser.sendKeys is not a function
+                    at LandingPage.makeASearch (/Users/vladimir/Documents/GitHub/home-assignment/test/pageobjects/landing.home.page.js:13:17)
+                    at Context.&lt;anonymous> (/Users/vladimir/Documents/GitHub/home-assignment/test/specs/example.e2e.js:8:27)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
