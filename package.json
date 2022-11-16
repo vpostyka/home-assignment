@@ -20,6 +20,7 @@
     },
     "homepage": "https://github.com/vpostyka/home-assignment#readme",
     "dependencies": {
+        "allure-commandline": "^2.20.1",
         "chai": "^4.3.7",
         "wdio": "^6.0.1"
     },
