@@ -6,7 +6,7 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "wdio": "wdio run wdio.conf.js",
-        "generate:report": "./node_modules/.bi/allure generate ./allure-results --clean"
+        "generate:report": "allure generate ./allure-results --clean"
     },
     "repository": {
         "type": "git",
