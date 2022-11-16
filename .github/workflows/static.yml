@@ -17,7 +17,7 @@ jobs:
       - name : Generate Allure reports
         run: npm run generate:report
       - name: Get Allure History
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         if: always()
         continue-on-error: true
         with:
